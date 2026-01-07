@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  exhibit-agent:
+    build: .
+    environment:
+      - DASHSCOPE_API_KEY=${DASHSCOPE_API_KEY}
+      - PORT=3000
+    ports:
+      - "3000:3000"
